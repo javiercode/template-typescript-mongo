@@ -1,0 +1,35 @@
+@api = http://localhost:4000/api
+
+
+### TEST
+GET {{api}}/usuario/test
+Content-Type: application/json
+
+### Lista Usuario
+GET {{api}}/usuario/list
+Content-Type: application/json
+
+### Crear Usuario
+POST {{api}}/usuario/create
+Content-Type: application/json
+
+{
+    "username":"xavier",
+    "nombre":"Javier Canqui",
+    "password":"123456"
+}
+
+### Editar Usuario
+PUT {{api}}/usuario/edit/6354770a4997de5428ba52d1
+Content-Type: application/json
+
+{
+    "username":"xavierc",
+    "nombre":"Javier Canqui",
+    "password":"12345678"
+}
+
+
+### Eliminar Tarea
+DELETE {{api}}/usuario/delete/6354770a4997de5428ba52d1
+Content-Type: application/json
